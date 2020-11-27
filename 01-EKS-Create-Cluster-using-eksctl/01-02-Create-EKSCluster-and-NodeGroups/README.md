@@ -15,10 +15,11 @@
 ## Step-01: Create EKS Cluster using eksctl
 - It will take 15 to 20 minutes to create the Cluster Control Plane 
 ```
+#availabilityZones: ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 # Create Cluster
 eksctl create cluster --name=eksdemo1 \
-                      --region=us-east-1 \
-                      --zones=us-east-1a,us-east-1b \
+                      --region=ap-southeast-1 \
+                      --zones=us-ap-southeast-1a,ap-southeast-1b, ap-southeast-1c \
                       --without-nodegroup 
 
 # Get List of clusters
