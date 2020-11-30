@@ -124,7 +124,7 @@ Use putty
 ```
 
 aws eks --region <us-west-2> update-kubeconfig --name <cluster_name>
-  aws eks --region ap-southeast-1  update-kubeconfig --name eksdemo1
+aws eks --region ap-southeast-1  update-kubeconfig --name eksdemo1
 
 ## Step-06: Update Worker Nodes Security Group to allow all traffic
 - We need to allow `All Traffic` on worker node security group
